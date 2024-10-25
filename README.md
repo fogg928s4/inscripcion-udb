@@ -1,1 +1,3 @@
-# PedCatedra
+# Sistema de inscripcion universitaria
+Esta aplicación está hecha con Windows Forms y permite a estudiantes universitarios inscribirse a sus clases según requerimientos de carrera y horario. 
+La aplicación admite diferentes tipos de usuarios que tienen acceso a diferentes funciones e información según su rol. Estos roles se dividen principalmente en estudiantes, profesores y administrador. El programa cuenta con una conexión a una base de datos local en MS SQL Server.
