@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5E46348D-4643-4AEF-B8A2-CC5D34871C8F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProyectoCatedra</RootNamespace>
+    <AssemblyName>ProyectoCatedra</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>toico.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\ColaGlobal.cs" />
+    <Compile Include="Clases\Materia.cs" />
+    <Compile Include="Clases\MateriaList.cs" />
+    <Compile Include="Clases\Nodo.cs" />
+    <Compile Include="Clases\Obtener materias.cs" />
+    <Compile Include="Clases\PerfilDatoscs.cs" />
+    <Compile Include="Clases\VerificarCarrera.cs" />
+    <Compile Include="Clases\VerificarMaterias.cs" />
+    <Compile Include="Clases\MateriaCola.cs" />
+    <Compile Include="Views\Pensum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Pensum.Designer.cs">
+      <DependentUpon>Pensum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Invitado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Invitado.Designer.cs">
+      <DependentUpon>Invitado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PerfilAlumnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\PerfilAlumnos.Designer.cs">
+      <DependentUpon>PerfilAlumnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AlumnosView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AlumnosView.Designer.cs">
+      <DependentUpon>AlumnosView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\ColaInscripcion.cs" />
+    <Compile Include="Controlador\Conexion.cs" />
+    <Compile Include="Controlador\RegistroCuenta.cs" />
+    <Compile Include="Clases\Estudiante.cs" />
+    <Compile Include="Views\Portal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Portal.Designer.cs">
+      <DependentUpon>Portal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FormAdmin.Designer.cs">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Inicio de sesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Inicio de sesion.Designer.cs">
+      <DependentUpon>Inicio de sesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\InscribirMateriasView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\InscribirMateriasView.Designer.cs">
+      <DependentUpon>InscribirMateriasView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\ListaEstudiantes.cs" />
+    <Compile Include="Views\Logo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Logo.Designer.cs">
+      <DependentUpon>Logo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\NodoEstudianteL.cs" />
+    <Compile Include="Views\Perfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Perfil.Designer.cs">
+      <DependentUpon>Perfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\Registro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Registro.Designer.cs">
+      <DependentUpon>Registro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tutores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Tutores.Designer.cs">
+      <DependentUpon>Tutores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\VerificarLogin.cs" />
+    <EmbeddedResource Include="Views\Pensum.resx">
+      <DependentUpon>Pensum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Invitado.resx">
+      <DependentUpon>Invitado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PerfilAlumnos.resx">
+      <DependentUpon>PerfilAlumnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AlumnosView.resx">
+      <DependentUpon>AlumnosView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Portal.resx">
+      <DependentUpon>Portal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FormAdmin.resx">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Inicio de sesion.resx">
+      <DependentUpon>Inicio de sesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\InscribirMateriasView.resx">
+      <DependentUpon>InscribirMateriasView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Logo.resx">
+      <DependentUpon>Logo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Perfil.resx">
+      <DependentUpon>Perfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Views\Registro.resx">
+      <DependentUpon>Registro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Tutores.resx">
+      <DependentUpon>Tutores.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inscribir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Universidad1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contaseña1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\111-1110179_arrow-icon-in-flat-style-icono-flecha-sin %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d7iab62-3ed8acb6-01b0-47da-92b0-c083af4e2f5c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen de WhatsApp 2023-04-11 a las 14.04.09.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\131722.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen de WhatsApp 2023-04-11 a las 16.29.01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\131961.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\133145.jpeg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen de WhatsApp 2023-04-11 a las 17.16.43.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asset0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asset1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asset2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asset3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="toico.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
